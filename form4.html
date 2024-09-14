@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> form4</title>
+  </head>
+  <body>
+  <form method="post">
+    <fieldset>
+      <legend>Academic information</legend>
+      <label for="degree">degree</label>
+      <select name="degree" id= "degree">
+      <option value="BA">bachelor's of Arts</option>
+      <option value="BS">bachelor's of Science</option>
+      <option value="MCA">Masters's in Computer Application</option>
+      </select>
+      <br>
+      <label for="studentid"> student ID</label>
+      <input type="password" name="studentid"/>
+      <br>
+      <label for="class attended">Class attended</label>
+      <select name="class attended" size="3" multiple>
+        <option>Geography</option>
+        <option>Mathematics</option>
+        <option>English</option>
+        <option>Computer</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Personel Details</legend>
+      <label for="Fname">First Name</label>
+      <input type="text" name="Fname" id="Fname" maxlength="10"/><br>
+      <label for="Lname">Last Name</label>
+      <input type="text" name="Lname" id="lname" maxlength="10"/><br>
+       gender:<input name="gender" type="radio" id="gn" value="m"/>
+       <label for="gn">Male</label>
+       <input name="gender" type="radio" id="gn" value="F"/>
+       <label for="gn">Female</label>
+    </fieldset>
+    <p>
+      <textarea name="terms" cols="30" rows="4" readonly="readonly">TERMS AND CONDITION</textarea>
+    </p>
+    <input type="submit" name="submit" value="Send Form"/>
+    <input type="reset" name="submit" value=" clear Form"/>
+  </form>
+  </body>
+</html>
